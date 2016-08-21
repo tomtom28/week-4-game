@@ -1,0 +1,96 @@
+<!-- @author: Thomas Thompson
+@github: tomtom28
+@comment: Interactive jQuery game
+ -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>RPG - Star Wars</title>
+
+		<!-- Link in CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+
+
+	<body>
+		<!-- Container for game -->
+		<div id = "container">
+
+			<!-- Title -->
+			<h1 id = "logo">Star Wars RPG! <span id = "side_note">Please zoom out a little. Try 75%.</span></h1>
+
+
+
+			<!-- Label for Character List -->
+			<h1 class = "game_head">Your Character</h1>
+			<!-- Div to contian all intial Characters in the List -->
+			<div id = "char_list">
+				
+				<!-- Characters Divs (intial location) -->
+				<div id = "obi" class = "stats_card" value = "170">
+					<h2>Obi-Wan Kenobi</h2>
+					<img src="assets/images/obi.png">
+					<p id = "obi_hp">170</p>
+				</div>
+
+				<div id = "luke" class = "stats_card" value = 140>
+					<h2>Luke Skywalker</h2>
+					<img src="assets/images/luke.png">
+					<p id = "luke_hp">140</p>
+				</div>
+
+				<div id = "sidi" class = "stats_card" value = 180>
+					<h2>Darth Sidious</h2>
+					<img src="assets/images/sidi.png">
+					<p id = "sidi_hp">180</p>
+				</div>
+
+				<div id = "maul" class = "stats_card" value = 150>
+					<h2>Darth Maul</h2>
+					<img src="assets/images/maul.png">
+					<p id = "maul_hp">150</p>
+				</div>
+
+			</div>
+
+
+
+			<!-- Label for Enemy List -->
+			<h1 class = "game_head">Enemies Available To Attack</h1>
+			<!-- Div to contian all Enemy Characters in the List -->
+			<div id = "enemy_list"></div>
+
+
+
+			<!-- Label for Attack Button -->
+			<h1 class = "game_head">Fight Section</h1>
+			<button id = "attack">Attack!</button>
+
+
+
+			<!-- Label for Defender List -->
+			<h1 class = "game_head">Defender</h1>
+			<!-- Div to contian Defender Character in the List -->
+			<div id = "defend_list"></div>
+
+
+
+			<!-- Div to contian Battle Comments -->
+			<div id = "battle_comments" class = "game_head"></div>
+
+		</div>
+
+
+
+		<!-- Link in jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/game.js"></script>
+
+	</body>
+</html>
