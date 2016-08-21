@@ -53,6 +53,8 @@ body{
 img{
 	height: 100px;
 	width: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
